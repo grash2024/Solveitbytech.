@@ -136,7 +136,7 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-white">Service Interested In</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                         <FormControl>
                           <SelectTrigger className="bg-background/50 border-white/10 h-12 rounded-xl focus:border-primary">
                             <SelectValue placeholder="Select a service" />
